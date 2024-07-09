@@ -1,0 +1,212 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0px;
+}
+
+/* Estilos do cabeçalho */
+.fixed-header {
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo do cabeçalho */
+  background-color: var(--header);
+  padding: 10px; /* Adiciona um pouco de preenchimento para estética */
+  margin: -20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo do header-container */
+  align-items: center;
+  width: 100%; /* Ocupa toda a largura disponível */
+  margin-right: 10rem;
+}
+
+.logo {
+  margin-left: 80px;
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center; /* Centraliza os itens dentro do ul */
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+/* Botões e submenus */
+.Butoes {
+  /* background-color: var(--fundo);
+  border-radius: 5px;
+  padding: 0;
+  height: 50%;
+  width: auto;
+  color: black;
+  cursor: pointer;
+  margin: 5px;
+  border: 2px solid #333; /* Adiciona uma borda preta */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--fundo);
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  
+}
+
+.Butoes:hover {
+  background-color: #f1d742;
+}
+
+.submenu-parent:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--fundo);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.submenu li {
+  margin: 0;
+}
+
+.submenu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+}
+
+.submenu li a:hover {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+  .fixed-header{
+   width: auto;
+   display: block;
+   justify-content: center;
+ 
+  }
+ 
+  .logo{
+   margin-left: 145px;
+  }
+ 
+  .Butoes {
+    
+   border-radius: 5px;
+   padding: 0;
+   height: 50%;
+   width: auto;
+ }
+ 
+ 
+ }
+ 
+
+/* Estilos para a section Controle */
+.Controle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(80vh - 10px);
+}
+
+.controle-container {
+  text-align: center;
+  width: 1100px;
+  height: 400px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  color: #333;
+  margin-top: 20px;
+}
+
+.button-container {
+  margin-top: 80px;
+}
+
+.button-container button  {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--fundo);
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  
+}
+
+.button-container button a {
+  text-decoration: none;
+  color: #333;
+}
+
+.button-container button:hover {
+  background-color: #f1d742;
+}
+
+.select-container {
+  margin-top: 80px;
+}
+
+.select-container select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  color: #333;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+  
+   .controle-container {
+    flex-direction: column;
+   }
+
+
+  }
+
